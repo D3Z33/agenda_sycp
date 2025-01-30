@@ -13,7 +13,7 @@
 
 ## 🚀 **Sobre o Projeto**  
 
-Este projeto nasceu como um **desafio do módulo bônus da certificação SYCP** da **@Solyd**, onde a proposta era **praticar Python** e desenvolver um **sistema de back-end para gerenciar uma agenda de contatos**.  
+Este projeto nasceu como um **desafio do módulo bônus da certificação SYCP** da **@Solyd**, onde a proposta era **praticar Python for Hackers** e desenvolver um **sistema de back-end para gerenciar uma agenda de contatos**.  
 
 Mas... **fomos um pouquinho além!** 😏  
 
@@ -40,6 +40,7 @@ Agora qualquer pessoa pode **se sentir um hacker** por alguns instantes, explora
 ✅ **Front-end interativo**: Simples, intuitivo e moderno  
 
 ✅ **Exploração de Vulnerabilidades OWASP** 🔥  
+
 
 &nbsp;&nbsp;&nbsp;&nbsp;🔹 **SQL Injection (SQLi)**  
 &nbsp;&nbsp;&nbsp;&nbsp;🔹 **Cross-Site Scripting (XSS)**  
