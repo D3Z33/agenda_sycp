@@ -34,13 +34,18 @@ Agora qualquer pessoa pode **se sentir um hacker** por alguns instantes, explora
 
 ## 🏆 **Principais Funcionalidades**
 ✅ **CRUD Completo**: Adicionar, remover, listar e buscar contatos  
+
 ✅ **Autenticação JWT**: Tokens individuais para cada sessão.... ou não ?  
+
 ✅ **Front-end interativo**: Simples, intuitivo e moderno  
+
 ✅ **Exploração de Vulnerabilidades OWASP** 🔥  
 &nbsp;&nbsp;&nbsp;&nbsp;🔹 **SQL Injection (SQLi)**  
 &nbsp;&nbsp;&nbsp;&nbsp;🔹 **Cross-Site Scripting (XSS)**  
 &nbsp;&nbsp;&nbsp;&nbsp;🔹 **Autenticação Fraca (Auth Bypass)**  
+
 ✅ **SOC Monitoramento**: Acompanhe os ataques em tempo real 📊  
+
 ✅ **Deploy completo no Railway**: **Back + Front-end no mesmo serviço** 🚀  
 
 ---
@@ -93,16 +98,16 @@ GET /vulnerabilidades/idor - Teste de autenticação fraca
 Adicionei **as 3 falhas mais comuns no OWASP** para tornar o projeto **realista e desafiador**:  
 
 1️⃣ **SQL Injection (SQLi)**  
-> **Tente logar com:** `' OR 1=1 --`   .... ou simplesmente, clique em copiar  
-> Será que o sistema valida corretamente as entradas?  
+> **Tente logar com:** `' OR 1=1 -- '`   .... ou simplesmente, clique em copiar  
+  - Será que o sistema valida corretamente as entradas?  
 
 2️⃣ **Cross-Site Scripting (XSS)**  
 > **Insira no campo de nome:** `<script>alert("XSS!")</script>`   .... ou simplesmente, clique em copiar    
-> O JavaScript será executado ou o sistema bloqueia a injeção?  
+  - O JavaScript será executado ou o sistema bloqueia a injeção?  
 
 3️⃣ **Bypass de Autenticação**  
 > **Tente acessar um endpoint protegido sem um token JWT válido.**  ... temos apenas 5 users no banco de dados  
-> Será que a API expõe informações sensíveis?  
+  - Será que a API expõe informações sensíveis?  
 
 <br>
 
