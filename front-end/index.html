@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos - SYCP</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+        <!-- Container para notificações -->
+    <div id="notificacao-container"></div>
+
+    <header>
+        <h1>Agenda de Contatos - SYCP</h1>
+        <button id="limparTudo" class="danger-btn">Limpar Tudo</button>
+    </header>
+
+    <!-- Botões principais -->
+    <section class="main-controls">
+        <div class="buttons">
+            <button id="gerarContatos">Gerar Contatos Aleatórios</button>
+            <button id="listarContatos">Listar Todos</button>
+            <div class="search">
+                <div class="search-wrapper">
+                    <input type="text" id="buscarContato" placeholder="Buscar contatos...">
+                    <button id="buscarBtn" class="icon-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="search-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+    </section>
+
+    <!-- Seção de Deletar Contato -->
+    <section class="delete-section">
+        <h3>Deletar Contato:</h3>
+        <div class="delete-contact">
+            <input type="number" id="idContatoDeletar" placeholder="ID do contato">
+            <button id="deletarContato">Deletar Contato</button>
+        </div>
+    </section>
+
+    <!-- Seção de Adicionar Contato -->
+    <section class="add-contact-section">
+        <h3>Adicionar Contato:</h3>
+        <form id="formAdicionarContato">
+            <input type="text" id="nomeContato" placeholder="Nome *" required>
+            <input type="text" id="telefoneContato" placeholder="Telefone *" required>
+            <input type="email" id="emailContato" placeholder="Email (Opcional)">
+            <input type="text" id="enderecoContato" placeholder="Endereço (Opcional)">
+            <button type="submit">Adicionar Contato</button>
+        </form>
+    </section>
+
+    <!-- Lista de Contatos -->
+    <section class="contacts-section">
+        <h3>Contatos:</h3>
+        <ul id="resultadoContatos" class="contacts-list">
+            <li>
+                <button class="icon-clipboard" data-telefone="99999-9999" title="Copiar Número">📋</button>
+                <button class="icon-btn" data-id="1" title="Editar Contato">
+                    <img src="edit-icon.png" alt="Editar">
+                </button>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Modal para edição de contato -->
+    <div id="editarContatoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Editar Contato</h3>
+            <form id="formEditarContato">
+                <input type="hidden" id="idContatoEditar">
+                <input type="text" id="nomeEditar" placeholder="Nome" required>
+                <input type="text" id="telefoneEditar" placeholder="Telefone" required>
+                <input type="email" id="emailEditar" placeholder="Email (Opcional)">
+                <input type="text" id="enderecoEditar" placeholder="Endereço (Opcional)">
+                <button type="submit">Salvar Alterações</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Botão Call to Action para Pentest -->
+    <button id="botaoPentest" class="cta-button">🔎 Que tal um Pentest agora ... só clicar</button>
+
+    <!-- Seção de Vulnerabilidades Detectadas (inicialmente oculta) -->
+    <section id="painelPentest" class="vulnerabilities-section oculto">
+        <h3>Falhas de Segurança Detectadas</h3>
+        <table id="tabelaVulnerabilidades">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Risco</th>
+                    <th>Exploit</th>
+                    <th>Correção</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- As vulnerabilidades serão carregadas dinamicamente aqui -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Botão para exibir a exploração de vulnerabilidades -->
+    <button id="toggleVulnSection">🔍 Explorar Vulnerabilidades, clique</button>
+
+    <!-- Seção de exploração de vulnerabilidades -->
+    <section id="vulnerabilidadesSection" class="hidden">
+        <h2>Exploração de Vulnerabilidades</h2>
+
+        <div class="vuln-container">
+            <!-- SQL Injection -->
+            <div class="vuln-card">
+                <h3>SQL Injection</h3>
+                <p>Tente realizar um ataque SQL Injection:</p>
+                <input type="text" id="sqlInput" placeholder="Copie o Exploit :  ID 1  SQLi e Cole   <-- aqui -->">
+                <button onclick="testarSQLInjection()">Testar Exploit</button>
+                <p id="sqlResult"></p>
+            </div>
+
+            <!-- XSS -->
+            <div class="vuln-card">
+                <h3>Cross-Site Scripting (XSS)</h3>
+                <p>Tente realizar um ataque XSS:</p>
+                <input type="text" id="xssInput" placeholder="Copie o Exploit :  ID 2  XSS e Cole   <-- aqui -->">
+                <button onclick="testarXSS()">Testar Exploit</button>
+                <div id="xssResult"></div>
+            </div>
+
+            <!-- IDOR -->
+            <div class="vuln-card">
+                <h3>IDOR (Insecure Direct Object Reference)</h3>
+                <p>Tente acessar os dados de outro usuário:</p>
+                <input type="number" id="idorInput" placeholder="ID do usuário: temos 5, então insira algo de 1 a 5">
+                <button onclick="testarIDOR()">Testar Exploit</button>
+                <p id="idorResult"></p>
+            </div>
+        </div>
+    </section>    
+
+    <!-- Logs do sistema -->
+    <section class="logs-section">
+        <h3>Logs do Sistema (Tempo Real):</h3>
+        <table id="tabelaLogs">
+            <thead>
+                <tr>
+                    <th>Data/Hora</th>
+                    <th>IP</th>
+                    <th>Método</th>
+                    <th>Rota</th>
+                    <th>Status</th>
+                    <th>Dados</th>
+                    <th>Agente</th>
+                    <th>Mensagem</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Logs serão inseridos dinamicamente aqui -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="scripts.js"></script>
+    <script src="vulnerabilidades.js"></script>
+</body>
+</html>

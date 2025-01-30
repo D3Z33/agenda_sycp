@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploração de Vulnerabilidades</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Exploração de Vulnerabilidades</h1>
+        <a href="index.html" class="back-btn">🔙 Voltar</a>
+    </header>
+
+    <section class="vuln-section">
+        <h2>SQL Injection</h2>
+        <p>Tente realizar um ataque SQL Injection:</p>
+        <input type="text" id="sqlInput" placeholder="Copie o Exploit: ID 1 SQLi e Cole -- aqui --">
+        <button onclick="testarSQLInjection()">Testar Exploit</button>
+        <p id="sqlResult"></p>
+    </section>
+
+    <section class="vuln-section">
+        <h2>Cross-Site Scripting (XSS)</h2>
+        <p>Tente realizar um ataque XSS:</p>
+        <input type="text" id="xssInput" placeholder="Copie o Exploit: ID 2 e Cole -- aqui --">
+        <button onclick="testarXSS()">Testar Exploit</button>
+        <div id="xssResult"></div>
+    </section>
+
+    <section class="vuln-section">
+        <h2>IDOR (Insecure Direct Object Reference)</h2>
+        <p>Tente acessar os dados de outro usuário:</p>
+        <input type="number" id="idorInput" placeholder="ID do usuário: temos 5, então insira algo de 1 a 5">
+        <button onclick="testarIDOR()">Testar Exploit</button>
+        <p id="idorResult"></p>
+    </section>
+
+    <script src="vulnerabilidades.js"></script>
+</body>
+</html>

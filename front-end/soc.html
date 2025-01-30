@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel SOC - Monitoramento</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Painel SOC - Monitoramento de Segurança</h1>
+    </header>
+    
+    <section class="soc-dashboard">
+        <div class="logs-section">
+            <h2>Logs de Segurança em Tempo Real</h2>
+            <table id="tabelaLogs">
+                <thead>
+                    <tr>
+                        <th>Data/Hora</th>
+                        <th>IP</th>
+                        <th>Método</th>
+                        <th>Rota</th>
+                        <th>Status</th>
+                        <th>Dados</th>
+                        <th>Agente</th>
+                        <th>Mensagem</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Logs serão carregados aqui dinamicamente -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="metrics-section">
+            <h2>Gráficos de Monitoramento</h2>
+            <canvas id="chartAtaques"></canvas>
+            <canvas id="chartStatus"></canvas>
+        </div>
+
+        <div class="system-status">
+            <h2>Status do Sistema</h2>
+            <p><strong>Serviço API:</strong> <span id="apiStatus">Carregando...</span></p>
+            <p><strong>Última atualização:</strong> <span id="lastUpdate">--:--</span></p>
+        </div>
+    </section>
+
+</body>
+</html>
