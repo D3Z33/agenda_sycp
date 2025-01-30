@@ -1,11 +1,11 @@
 <h1 align="center">📌 Agenda de Contatos - SYCP 🔥</h1>
 
 <p align="center">
+  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">  
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
-  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">  
   <img src="https://img.shields.io/badge/Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white">
 </p>
 
@@ -40,6 +40,7 @@ Agora qualquer pessoa pode **se sentir um hacker** por alguns instantes, explora
 ✅ **Front-end interativo**: Simples, intuitivo e moderno  
 
 ✅ **Exploração de Vulnerabilidades OWASP** 🔥  
+
 &nbsp;&nbsp;&nbsp;&nbsp;🔹 **SQL Injection (SQLi)**  
 &nbsp;&nbsp;&nbsp;&nbsp;🔹 **Cross-Site Scripting (XSS)**  
 &nbsp;&nbsp;&nbsp;&nbsp;🔹 **Autenticação Fraca (Auth Bypass)**  
