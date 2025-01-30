@@ -39,9 +39,10 @@ jwt = JWTManager(app)
 app.register_blueprint(vulnerabilidades_bp) # Rota para vulnerabilidades
 
 # Caminhos de Arquivos
-DATA_PATH = os.path.join(os.getcwd(), 'dados', 'contatos.json')
-LOG_PATH = os.path.join(os.getcwd(), 'logs', 'acesso.log')
-last_log_time = {} # Evitar Logs Duplicados
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # Diretório base do back-end
+DATA_PATH = os.path.join(BASE_DIR, 'dados', 'contatos.json')
+LOG_PATH = os.path.join(BASE_DIR, 'logs', 'acesso.log')
+last_log_time = {}  # Evitar logs duplicados
 
 # Lista de DDDs válidos para evitar geração de números errados
 DDDS_VALIDOS = ["11", "21", "31", "41", "51", "61", "71", "81", "91"]
@@ -340,6 +341,6 @@ def limpar_logs():
 # Inicializar arquivos e rodar a aplicação
 if __name__ == '__main__':
     inicializar_arquivos()  # Garante que os arquivos necessários existem
-    print("🚀 Servidor Flask iniciado em http://127.0.0.1:5000/")
-    registrar_log("Servidor Flask iniciado!")
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))  # Pega a porta do Railway ou usa 5000 como padrão
+    print(f"🚀 Servidor Flask iniciado na porta {port}!")
+    app.run(host='0.0.0.0', port=port)

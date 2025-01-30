@@ -1,1 +1,37 @@
-[]
+[
+    {
+        "id": 1,
+        "nome": "Fernanda Silva",
+        "telefone": "81 96967-9611",
+        "email": "fernanda97@gmail.com",
+        "endereco": "Beco do Sol, 98"
+    },
+    {
+        "id": 2,
+        "nome": "Bruno Henrique",
+        "telefone": "21 92496-6472",
+        "email": "bruno94@gmail.com",
+        "endereco": "Rua Joao Silva, 75"
+    },
+    {
+        "id": 3,
+        "nome": "Mariana Costa",
+        "telefone": "51 98772-9435",
+        "email": "mariana10@gmail.com",
+        "endereco": "Praca Central, 200"
+    },
+    {
+        "id": 4,
+        "nome": "Renata Silva",
+        "telefone": "81 92513-6962",
+        "email": "renata45@gmail.com",
+        "endereco": "Praca Central, 200"
+    },
+    {
+        "id": 5,
+        "nome": "Camila Souza",
+        "telefone": "31 98986-1146",
+        "email": "camila34@gmail.com",
+        "endereco": "Rua Joao Silva, 75"
+    }
+]
