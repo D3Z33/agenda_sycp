@@ -240,7 +240,7 @@ Com tudo funcionando localmente, chegou a hora de **subir o projeto para a web**
 - O cache impedia que **as atualizações entrassem em vigor imediatamente**.  
 
 
-✅ **Solução:** Unificamos tudo no **Railway**, garantindo que **front e back estivessem no mesmo servidor**, eliminando os problemas de comunicação. Além disso, ativamos logs para monitoramento **e criamos um ping automático** para manter o back-end ativo.  
+✅ **Solução:** Unificaquei tudo no **Railway**, garantindo que **front e back estivessem no mesmo servidor**, eliminando os problemas de comunicação. Além disso, ativei logs para monitoramento **e criei um ping automático** para manter o back-end ativo.  
 
 ---
 
