@@ -248,6 +248,7 @@ Este projeto foi muito além de **apenas um módulo bônus de programação**. E
 
 O resultado? Um **sistema funcional, interativo e educativo**, onde qualquer um pode testar falhas de segurança, explorar vulnerabilidades e aprender **como elas podem ser corrigidas na prática**.  
 
+
 🛠️ **Problemas resolvidos:**  
 
 
