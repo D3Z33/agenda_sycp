@@ -1,5 +1,5 @@
 let token = localStorage.getItem("token") || ""; // Recupera o token salvo
-const API_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "https://agendasycp-production.up.railway.app"; // API Railway -> Conectar Back-End ao Front
+const API_URL = "https://agendasycp-production.up.railway.app"; // API Railway -> Conectar Back-End ao Front
 let intervalId = null; // ID para controlar os logs
 
 console.log("Backend URL:", API_URL);
