@@ -1,11 +1,11 @@
 <h1 align="center">📌 Agenda de Contatos - SYCP 🔥</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
-  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">  
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white">
   <img src="https://img.shields.io/badge/Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white">
 </p>
 
@@ -34,7 +34,7 @@ Agora qualquer pessoa pode **se sentir um hacker** por alguns instantes, explora
 
 ## 🏆 **Principais Funcionalidades**
 ✅ **CRUD Completo**: Adicionar, remover, listar e buscar contatos  
-✅ **Autenticação JWT**: Tokens individuais para cada sessão.... ou não ? 
+✅ **Autenticação JWT**: Tokens individuais para cada sessão.... ou não ?  
 ✅ **Front-end interativo**: Simples, intuitivo e moderno  
 ✅ **Exploração de Vulnerabilidades OWASP** 🔥  
 &nbsp;&nbsp;&nbsp;&nbsp;🔹 **SQL Injection (SQLi)**  
@@ -52,9 +52,11 @@ Agora qualquer pessoa pode **se sentir um hacker** por alguns instantes, explora
 - **Flask-CORS** (Permitir comunicação com o front-end)  
 - **SQLite + JSON** (Armazenamento de contatos)  
 
+
 📌 **Front-End**:  
 - **HTML, CSS, JavaScript (Vanilla)**  
 - **Fetch API** (Para comunicação com a API)
+
 
 📌 **Infraestrutura**:  
 - **Railway** (Back + Front no mesmo serviço)  
@@ -91,19 +93,21 @@ GET /vulnerabilidades/idor - Teste de autenticação fraca
 Adicionei **as 3 falhas mais comuns no OWASP** para tornar o projeto **realista e desafiador**:  
 
 1️⃣ **SQL Injection (SQLi)**  
-> **Tente logar com:** `' OR 1=1 --`   .... ou simplesmente, clique em copiar
+> **Tente logar com:** `' OR 1=1 --`   .... ou simplesmente, clique em copiar  
 > Será que o sistema valida corretamente as entradas?  
 
 2️⃣ **Cross-Site Scripting (XSS)**  
-> **Insira no campo de nome:** `<script>alert("XSS!")</script>`   .... ou simplesmente, clique em copiar  
+> **Insira no campo de nome:** `<script>alert("XSS!")</script>`   .... ou simplesmente, clique em copiar    
 > O JavaScript será executado ou o sistema bloqueia a injeção?  
 
 3️⃣ **Bypass de Autenticação**  
-> **Tente acessar um endpoint protegido sem um token JWT válido.**  ... temos apenas 5 users no banco de dados
+> **Tente acessar um endpoint protegido sem um token JWT válido.**  ... temos apenas 5 users no banco de dados  
 > Será que a API expõe informações sensíveis?  
 
+<br>
+
 💡 **A melhor parte?** Assim que você explorar uma falha, **o SOC gera alertas em tempo real**, e o sistema pode se **auto-corrigir** para se proteger contra ataques! 😈💻  
-  - A correção depende de você, a falha já explorei!
+  - A correção depende de você, as falhas já explorei !
 
 ---
 
@@ -132,9 +136,11 @@ Basta abrir o arquivo `index.html` no navegador.
 ---
 
 ## **👨‍💻 Author**
-### 🚀 ** (@D3Z33)**
+### 🚀 **(@D3Z33)**
 💬 **Discord:** deze_e  
 💻 **GitHub:** [D3Z33](https://github.com/D3Z33)  
+
+<br>
 
 📩 Caso tenha **dúvidas, sugestões** (😉), me chame!  
 
