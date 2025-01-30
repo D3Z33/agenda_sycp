@@ -1,5 +1,7 @@
 <h1 align="center">📌 Agenda de Contatos - SYCP 🔥</h1>
 
+<br>
+
 <p align="center">
   <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">  
@@ -33,6 +35,8 @@ Agora qualquer pessoa pode **se sentir um hacker** por alguns instantes, explora
 🔗 **[https://github.com/D3Z33/agenda_sycp](https://github.com/D3Z33/agenda_sycp)**  
 
 ---
+
+<br>
 
 ## 🏆 **Principais Funcionalidades**
 ✅ **CRUD Completo**: Adicionar, remover, listar e buscar contatos  
@@ -160,6 +164,8 @@ Este projeto foi **muito mais do que apenas um desafio técnico**. Foi uma jorna
 
 ---
 
+<br>
+
 ## 🌍 **Desafio: Conectar Tudo Localmente**  
 
 No começo, o objetivo era simples: **rodar o back-end em Python** com uma API funcional e, depois, integrar um **front-end em HTML, CSS e JavaScript** para interagir com essa API.  
@@ -178,6 +184,8 @@ Mas rapidamente percebi que a coisa **não era tão simples**. Os primeiros prob
 
 ---
 
+<br>
+
 ## 🔒 **Desafio: Fazer Endpoints Seguros e ao Mesmo Tempo Vulneráveis**  
 
 Este era um dos **pontos mais complexos** do projeto: **como criar um sistema seguro, mas que ainda pudesse ser explorado?**  
@@ -195,6 +203,8 @@ Queria que os usuários **pudessem testar vulnerabilidades reais**, mas também 
 ✅ **Solução:** Implementar **pontos vulneráveis controlados**, onde o usuário pode explorar **SQL Injection, XSS e falhas de autenticação**. Mas **ao clicar em corrigir**, a aplicação aplica **patches dinâmicos**, tornando-se mais segura automaticamente.  
 
 ---
+
+<br>
 
 ## ⚙️ **Desafio: Comunicação Entre Back-end em Python e Front-end em JavaScript**  
 
@@ -229,6 +239,9 @@ Com tudo funcionando localmente, chegou a hora de **subir o projeto para a web**
 ✅ **Solução:** Unificamos tudo no **Railway**, garantindo que **front e back estivessem no mesmo servidor**, eliminando os problemas de comunicação. Além disso, ativamos logs para monitoramento **e criamos um ping automático** para manter o back-end ativo.  
 
 ---
+
+<br>
+
 # 📌 **Por fim, mas não menos importante:**  
 
 Este projeto foi muito além de **apenas um módulo bônus de programação**. Ele se tornou um verdadeiro **laboratório de troubleshooting**, onde cada erro foi uma oportunidade para aprender **sobre deploy, segurança, comunicação entre serviços e estabilidade de aplicações web**.  
